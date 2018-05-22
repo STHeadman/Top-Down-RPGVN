@@ -6,7 +6,20 @@ public class PlayerMovement : MonoBehaviour {
 
     public float speed;
     public Rigidbody2D RB;
+    Animator anim;
 
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
+    void Update ()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            anim.SetTrigger("Attack");
+        }
+    }
     void FixedUpdate()
     {
         var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
