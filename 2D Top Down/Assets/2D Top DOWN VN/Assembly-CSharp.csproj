@@ -51,10 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\EnemyScript.cs" />
-     <Compile Include="Assets\Scripts\Explosion.cs" />
-     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\Sword.cs" />
+     <Compile Include="Assets\CameraFollow.cs" />
+     <Compile Include="Assets\MovementScript.cs" />
+     <Compile Include="Assets\TopDown\Scripts\EnemyScript.cs" />
+     <Compile Include="Assets\TopDown\Scripts\Explosion.cs" />
+     <Compile Include="Assets\TopDown\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\TopDown\Scripts\Sword.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

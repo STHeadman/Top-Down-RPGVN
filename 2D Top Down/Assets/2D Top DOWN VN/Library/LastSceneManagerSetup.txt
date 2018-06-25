@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TopDOwnTutorial.unity
+- path: Assets/Octopath.unity
   isLoaded: 1
   isActive: 1
