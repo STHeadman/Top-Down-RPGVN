@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovementScript : MonoBehaviour {
 
-    
+    public Animator Anim;
     Material Mats;
     public float speed = 6.0F;
     public float jumpSpeed = 8.0F;
@@ -42,21 +42,45 @@ public class MovementScript : MonoBehaviour {
     {
         if (moveDirection.x > 1)
         {
-            Mats.color = Color.blue;
+            Anim.SetBool("Left", false);
+            Anim.SetBool("Backward", false);
+            Anim.SetBool("Forward", false);
+            Anim.SetBool("Right", true);
+            Anim.SetBool("Idle", false);
         }
 
         else if (moveDirection.z > 1)
         {
-            Mats.color = Color.black;
+            Anim.SetBool("Left", false);
+            Anim.SetBool("Backward", false);
+            Anim.SetBool("Forward", true);
+            Anim.SetBool("Right", false);
+            Anim.SetBool("Idle", false);
         }
         else if (-moveDirection.z > 1)
         {
-            Mats.color = Color.white;
+            Anim.SetBool("Left", false);
+            Anim.SetBool("Backward", true);
+            Anim.SetBool("Forward", false);
+            Anim.SetBool("Right", false);
+            Anim.SetBool("Idle", false);
         }
 
         else if (-moveDirection.x > 1)
         {
-            Mats.color = Color.yellow;
+            Anim.SetBool("Left", true);
+            Anim.SetBool("Backward", false);
+            Anim.SetBool("Forward", false);
+            Anim.SetBool("Right", false);
+            Anim.SetBool("Idle", false);
+        } 
+        else if (moveDirection.x == 0 && moveDirection.z == 0)
+        {
+            Anim.SetBool("Left", false);
+            Anim.SetBool("Backward", false);
+            Anim.SetBool("Forward", false);
+            Anim.SetBool("Right", false);
+            Anim.SetBool("Idle", true);
         }
     }
 
