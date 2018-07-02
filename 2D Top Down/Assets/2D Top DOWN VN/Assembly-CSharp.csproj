@@ -51,8 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CameraFollow.cs" />
-     <Compile Include="Assets\MovementScript.cs" />
+     <Compile Include="Assets\2.5D\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\2.5D\Scripts\MovementScript.cs" />
      <Compile Include="Assets\TopDown\Scripts\EnemyScript.cs" />
      <Compile Include="Assets\TopDown\Scripts\Explosion.cs" />
      <Compile Include="Assets\TopDown\Scripts\PlayerMovement.cs" />

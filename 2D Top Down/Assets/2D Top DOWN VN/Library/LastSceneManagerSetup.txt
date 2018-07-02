@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Octopath.unity
+- path: Assets/2.5D/Octopath.unity
   isLoaded: 1
   isActive: 1
