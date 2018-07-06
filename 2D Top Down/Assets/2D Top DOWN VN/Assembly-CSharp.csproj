@@ -53,6 +53,9 @@
   <ItemGroup>
      <Compile Include="Assets\2.5D\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\2.5D\Scripts\MovementScript.cs" />
+     <Compile Include="Assets\LockerScript.cs" />
+     <Compile Include="Assets\PlayerSwitchScript.cs" />
+     <Compile Include="Assets\SchoolBarrier.cs" />
      <Compile Include="Assets\TopDown\Scripts\EnemyScript.cs" />
      <Compile Include="Assets\TopDown\Scripts\Explosion.cs" />
      <Compile Include="Assets\TopDown\Scripts\PlayerMovement.cs" />

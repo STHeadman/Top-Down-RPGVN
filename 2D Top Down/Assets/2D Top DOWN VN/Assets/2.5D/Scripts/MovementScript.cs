@@ -12,12 +12,10 @@ public class MovementScript : MonoBehaviour {
     private Vector3 moveDirection = Vector3.zero;
     CharacterController cc;
     GameObject player;
-    public SpriteRenderer sprite;
 
     void Start()
     {
-        Mats = GetComponent<Renderer>().material;
-        print("Materials " + Resources.FindObjectsOfTypeAll(typeof(Material)).Length);
+
     }
 
     void Update()
@@ -82,15 +80,5 @@ public class MovementScript : MonoBehaviour {
             Anim.SetBool("Right", false);
             Anim.SetBool("Idle", true);
         }
-    }
-
-   void OnMouseOver()
-    {
-        Mats.color = Color.white;
-    }
-
-   void OnMouseExit()
-    {
-        Mats.color = Color.red;
     }
 }
