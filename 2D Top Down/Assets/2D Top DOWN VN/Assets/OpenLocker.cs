@@ -6,15 +6,20 @@ public class OpenLocker : MonoBehaviour {
 
     float duration = 0.5f;
 
-    void Update()
+    void Start()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            StartCoroutine(Rotate(duration));
-        } else if (Input.GetKeyDown(KeyCode.Q))
-        {
-            StartCoroutine(RotateBack(duration));
-        }
+        OpenLockerTrigger.OpenLocker += Open;
+        OpenLockerTrigger.CloseLocker += Close;
+    }
+    public void Open()
+    {
+
+        StartCoroutine(Rotate(duration));
+    }
+
+    public void Close()
+    {
+        StartCoroutine(RotateBack(duration));
     }
 
     IEnumerator Rotate(float duration)
