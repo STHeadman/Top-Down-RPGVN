@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class OpenLocker : MonoBehaviour {
 
-    float duration = 0.5f;
+    public float duration = 0.5f;
+    public GameObject Lockerdoor;
 
     void Start()
     {

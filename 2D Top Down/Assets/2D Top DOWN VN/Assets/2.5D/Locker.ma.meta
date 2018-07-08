@@ -12,6 +12,61 @@ ModelImporter:
     100008: pCube3
     100010: transform1
     100012: transform2
+    100014: Door1
+    100016: Door1 1
+    100018: Door1 2
+    100020: Door1 3
+    100022: Door1 4
+    100024: Door2
+    100026: Door3
+    100028: Door4
+    100030: Door5
+    100032: Locker2
+    100034: Locker2 1
+    100036: Locker2 2
+    100038: Locker2 3
+    100040: Locker2 4
+    100042: Locker3
+    100044: Locker4
+    100046: Locker5
+    100048: Locker6
+    100050: StaticLocker
+    100052: StaticLocker1
+    100054: StaticLocker2
+    100056: StaticLocker3
+    100058: StaticLocker4
+    100060: Door10
+    100062: Door11
+    100064: Door12
+    100066: Door13
+    100068: Door14
+    100070: Door15
+    100072: Door16
+    100074: Door17
+    100076: Door18
+    100078: Door19
+    100080: Door20
+    100082: Door21
+    100084: Door22
+    100086: Door23
+    100088: Door24
+    100090: Door25
+    100092: Door26
+    100094: Door27
+    100096: Door28
+    100098: Door29
+    100100: Door30
+    100102: Door31
+    100104: Door32
+    100106: Door33
+    100108: Door34
+    100110: Door35
+    100112: Door6
+    100114: Door7
+    100116: Door8
+    100118: Door9
+    100120: StaticLocker1_Locker2
+    100122: pCube4
     400000: Door
     400002: //RootNode
     400004: Locker1
@@ -19,12 +74,217 @@ ModelImporter:
     400008: pCube3
     400010: transform1
     400012: transform2
+    400014: Door1
+    400016: Door1 1
+    400018: Door1 2
+    400020: Door1 3
+    400022: Door1 4
+    400024: Door2
+    400026: Door3
+    400028: Door4
+    400030: Door5
+    400032: Locker2
+    400034: Locker2 1
+    400036: Locker2 2
+    400038: Locker2 3
+    400040: Locker2 4
+    400042: Locker3
+    400044: Locker4
+    400046: Locker5
+    400048: Locker6
+    400050: StaticLocker
+    400052: StaticLocker1
+    400054: StaticLocker2
+    400056: StaticLocker3
+    400058: StaticLocker4
+    400060: Door10
+    400062: Door11
+    400064: Door12
+    400066: Door13
+    400068: Door14
+    400070: Door15
+    400072: Door16
+    400074: Door17
+    400076: Door18
+    400078: Door19
+    400080: Door20
+    400082: Door21
+    400084: Door22
+    400086: Door23
+    400088: Door24
+    400090: Door25
+    400092: Door26
+    400094: Door27
+    400096: Door28
+    400098: Door29
+    400100: Door30
+    400102: Door31
+    400104: Door32
+    400106: Door33
+    400108: Door34
+    400110: Door35
+    400112: Door6
+    400114: Door7
+    400116: Door8
+    400118: Door9
+    400120: StaticLocker1_Locker2
+    400122: pCube4
     2300000: Door
     2300002: Locker1
+    2300004: Door1
+    2300006: Door1 1
+    2300008: Door1 2
+    2300010: Door1 3
+    2300012: Door1 4
+    2300014: Door2
+    2300016: Door3
+    2300018: Door4
+    2300020: Door5
+    2300022: Locker2
+    2300024: Locker2 1
+    2300026: Locker2 2
+    2300028: Locker2 3
+    2300030: Locker2 4
+    2300032: Locker3
+    2300034: Locker4
+    2300036: Locker5
+    2300038: Locker6
+    2300040: Door10
+    2300042: Door11
+    2300044: Door12
+    2300046: Door13
+    2300048: Door14
+    2300050: Door15
+    2300052: Door16
+    2300054: Door17
+    2300056: Door18
+    2300058: Door19
+    2300060: Door20
+    2300062: Door21
+    2300064: Door22
+    2300066: Door23
+    2300068: Door24
+    2300070: Door25
+    2300072: Door26
+    2300074: Door27
+    2300076: Door28
+    2300078: Door29
+    2300080: Door30
+    2300082: Door31
+    2300084: Door32
+    2300086: Door33
+    2300088: Door34
+    2300090: Door35
+    2300092: Door6
+    2300094: Door7
+    2300096: Door8
+    2300098: Door9
+    2300100: StaticLocker1_Locker2
+    2300102: pCube4
     3300000: Door
     3300002: Locker1
+    3300004: Door1
+    3300006: Door1 1
+    3300008: Door1 2
+    3300010: Door1 3
+    3300012: Door1 4
+    3300014: Door2
+    3300016: Door3
+    3300018: Door4
+    3300020: Door5
+    3300022: Locker2
+    3300024: Locker2 1
+    3300026: Locker2 2
+    3300028: Locker2 3
+    3300030: Locker2 4
+    3300032: Locker3
+    3300034: Locker4
+    3300036: Locker5
+    3300038: Locker6
+    3300040: Door10
+    3300042: Door11
+    3300044: Door12
+    3300046: Door13
+    3300048: Door14
+    3300050: Door15
+    3300052: Door16
+    3300054: Door17
+    3300056: Door18
+    3300058: Door19
+    3300060: Door20
+    3300062: Door21
+    3300064: Door22
+    3300066: Door23
+    3300068: Door24
+    3300070: Door25
+    3300072: Door26
+    3300074: Door27
+    3300076: Door28
+    3300078: Door29
+    3300080: Door30
+    3300082: Door31
+    3300084: Door32
+    3300086: Door33
+    3300088: Door34
+    3300090: Door35
+    3300092: Door6
+    3300094: Door7
+    3300096: Door8
+    3300098: Door9
+    3300100: StaticLocker1_Locker2
+    3300102: pCube4
     4300000: Door
     4300002: Locker1
+    4300004: Door1
+    4300006: Locker2
+    4300008: Door1
+    4300010: Locker2
+    4300012: Locker3
+    4300014: Door2
+    4300016: Door1
+    4300018: Locker2
+    4300020: Locker6
+    4300022: Door5
+    4300024: Door1
+    4300026: Locker2
+    4300028: Locker5
+    4300030: Door4
+    4300032: Door1
+    4300034: Locker2
+    4300036: Locker4
+    4300038: Door3
+    4300040: Door34
+    4300042: Door9
+    4300044: Door10
+    4300046: Door15
+    4300048: Door17
+    4300050: Door21
+    4300052: Door28
+    4300054: Door29
+    4300056: Door30
+    4300058: Door6
+    4300060: Door13
+    4300062: Door16
+    4300064: Door18
+    4300066: Door25
+    4300068: Door33
+    4300070: Door7
+    4300072: Door12
+    4300074: Door19
+    4300076: Door23
+    4300078: Door26
+    4300080: Door32
+    4300082: Door8
+    4300084: Door11
+    4300086: Door14
+    4300088: Door20
+    4300090: Door22
+    4300092: Door24
+    4300094: Door27
+    4300096: Door31
+    4300098: Door35
+    4300100: StaticLocker1_Locker2
+    4300102: pCube4
     9500000: //RootNode
   materials:
     importMaterials: 1
