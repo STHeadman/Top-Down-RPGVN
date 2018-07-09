@@ -1,18 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class OpenLockerTrigger : MonoBehaviour {
 
-    public static Action OpenLocker;
-    public static Action CloseLocker;
+    public Animator Door;
 
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "OS" || other.tag == "IS")
         {
-            OpenLocker();
+            Door.SetTrigger("Open");
+            Door.ResetTrigger("Close");
         }
 
 
@@ -22,7 +21,8 @@ public class OpenLockerTrigger : MonoBehaviour {
     {
         if (other.tag == "OS" || other.tag == "IS")
         {
-            CloseLocker();
+            Door.SetTrigger("Close");
+            Door.ResetTrigger("Open");
         }
 
     }

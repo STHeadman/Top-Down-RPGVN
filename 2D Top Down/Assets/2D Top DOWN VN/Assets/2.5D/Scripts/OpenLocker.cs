@@ -9,8 +9,6 @@ public class OpenLocker : MonoBehaviour {
 
     void Start()
     {
-        OpenLockerTrigger.OpenLocker += Open;
-        OpenLockerTrigger.CloseLocker += Close;
     }
     public void Open()
     {
