@@ -51,12 +51,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\2.5D\Scripts\Actions.cs" />
      <Compile Include="Assets\2.5D\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\2.5D\Scripts\FlipScript.cs" />
      <Compile Include="Assets\2.5D\Scripts\ISSchoolBarrier.cs" />
      <Compile Include="Assets\2.5D\Scripts\LockerScript.cs" />
      <Compile Include="Assets\2.5D\Scripts\MovementScript.cs" />
      <Compile Include="Assets\2.5D\Scripts\OpenLocker.cs" />
      <Compile Include="Assets\2.5D\Scripts\OpenLockerTrigger.cs" />
+     <Compile Include="Assets\2.5D\Scripts\PlayerMoveScript.cs" />
      <Compile Include="Assets\2.5D\Scripts\PlayerSwitchScript.cs" />
      <Compile Include="Assets\2.5D\Scripts\RoofDoorScript.cs" />
      <Compile Include="Assets\2.5D\Scripts\SchoolBarrier.cs" />

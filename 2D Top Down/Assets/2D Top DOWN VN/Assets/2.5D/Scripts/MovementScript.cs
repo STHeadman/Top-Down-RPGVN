@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,7 +12,9 @@ public class MovementScript : MonoBehaviour {
     public float gravity = 20.0F;
     private Vector3 moveDirection = Vector3.zero;
     CharacterController cc;
-    GameObject player;
+    public GameObject Sprite;
+    Quaternion myRotate;
+    Vector3 rotValue;
 
     void Start()
     {
@@ -20,23 +23,34 @@ public class MovementScript : MonoBehaviour {
 
     void Update()
     {
-         cc = GetComponent<CharacterController>();
+        cc = GetComponent<CharacterController>();
         if (cc.isGrounded)
         {
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
             ColorChange();
-       
         }
         moveDirection.y -= gravity * Time.deltaTime;
         cc.Move(moveDirection * Time.deltaTime);
-        
-
-
     }
 
-    void ColorChange()
+        /* if (Input.GetKey(KeyCode.A))
+        {
+            rotateMove(180);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            rotateMove(0);
+        }
+
+}
+    private void rotateMove(int dir)
+    {
+        Sprite.transform.Rotate(0, dir, 0);
+    } */
+
+        void ColorChange()
     {
         if (moveDirection.x > 1)
         {
@@ -45,6 +59,7 @@ public class MovementScript : MonoBehaviour {
             Anim.SetBool("Forward", false);
             Anim.SetBool("Right", true);
             Anim.SetBool("Idle", false);
+           
         }
 
         else if (moveDirection.z > 1)
@@ -71,6 +86,7 @@ public class MovementScript : MonoBehaviour {
             Anim.SetBool("Forward", false);
             Anim.SetBool("Right", false);
             Anim.SetBool("Idle", false);
+
         } 
         else if (moveDirection.x == 0 && moveDirection.z == 0)
         {
@@ -80,5 +96,7 @@ public class MovementScript : MonoBehaviour {
             Anim.SetBool("Right", false);
             Anim.SetBool("Idle", true);
         }
+
+
     }
 }
