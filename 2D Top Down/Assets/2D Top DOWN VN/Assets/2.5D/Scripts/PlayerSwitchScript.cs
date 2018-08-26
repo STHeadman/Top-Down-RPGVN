@@ -20,7 +20,7 @@ public class PlayerSwitchScript : MonoBehaviour
 
     // Update is called once per frame
 
-    void OnTriggerStay()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
